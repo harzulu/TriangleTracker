@@ -43,7 +43,7 @@ namespace TriangleTracker.Tests
     {
       int[] sides = {3, 4, 8};
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(10, testTriangle.SumOfSmallest(sides));
+      Assert.AreEqual(7, testTriangle.SumOfSmallest(sides));
     }
   }
 }
