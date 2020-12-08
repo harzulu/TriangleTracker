@@ -27,7 +27,7 @@ namespace TriangleTracker.Tests
     {
       int[] sides = {3, 4, 8};
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(2, testTriangle.HowManyDuplicates(sides));
+      Assert.AreEqual(0, testTriangle.HowManyDuplicates(sides));
     }
   }
 }
