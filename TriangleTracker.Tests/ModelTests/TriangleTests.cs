@@ -11,7 +11,7 @@ namespace TriangleTracker.Tests
     {
       int[] sides = {3, 4, 8};
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(7, testTriangle.ReturnNums(sides));
+      Assert.AreEqual(3, testTriangle.ReturnNums(sides));
     }
   }
 }
