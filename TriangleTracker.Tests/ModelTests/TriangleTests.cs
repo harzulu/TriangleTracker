@@ -37,5 +37,13 @@ namespace TriangleTracker.Tests
       Triangle testTriangle = new Triangle();
       Assert.AreEqual(8, testTriangle.LargestNum(sides));
     }
+
+    [TestMethod]
+    public void SumOfSmallest_ReturnTheSumOfTheSmallestNumbers_7()
+    {
+      int[] sides = {3, 4, 8};
+      Triangle testTriangle = new Triangle();
+      Assert.AreEqual(10, testTriangle.SumOfSmallest(sides));
+    }
   }
 }

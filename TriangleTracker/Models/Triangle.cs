@@ -62,5 +62,23 @@ namespace TriangleTracker
       }
       return largest;
     }
+
+    public int SumOfSmallest(int[] arr)
+    {
+      int largest = LargestNum(arr);
+      int sum = 0;
+
+      for (int i = 0; i < arr.Length; i++)
+      {
+        if (arr[i] == largest)
+        {
+          sum += 0;
+        } else
+        {
+          sum += arr[i];
+        }
+      }
+      return sum;
+    }
   }
 }
