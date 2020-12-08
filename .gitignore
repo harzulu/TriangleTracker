@@ -1,0 +1,5 @@
+.vscode/
+TriangleTracker/bin/
+TriangleTracker.Tests/bin/
+TriangleTracker/obj/
+TriangleTracker.Tests/obj/
