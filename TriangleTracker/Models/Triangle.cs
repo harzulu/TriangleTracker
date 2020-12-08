@@ -2,6 +2,9 @@ namespace TriangleTracker
 {
   public class Triangle
   {
-    // code
+    public int ReturnNums(int[] arr)
+    {
+      return arr[0];
+    }
   }
 }

@@ -7,9 +7,11 @@ namespace TriangleTracker.Tests
   public class TriangleTests
   {
     [TestMethod]
-    public void MethodName_MethodTesting_TrueOrFalse()
+    public void ReturnNums_ReturnTheGivenNumbers_Num1Num2Num3()
     {
-      //test code
+      int[] sides = {3, 4, 8};
+      Triangle testTriangle = new Triangle();
+      Assert.AreEqual(7, testTriangle.ReturnNums(sides));
     }
   }
 }
