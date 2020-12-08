@@ -35,7 +35,7 @@ namespace TriangleTracker.Tests
     {
       int[] sides = {3, 4, 8};
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(12, testTriangle.LargestNum(sides));
+      Assert.AreEqual(8, testTriangle.LargestNum(sides));
     }
   }
 }
