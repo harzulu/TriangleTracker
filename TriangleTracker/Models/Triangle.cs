@@ -46,5 +46,21 @@ namespace TriangleTracker
         }
       }
     }
+
+    public int LargestNum(int[] arr)
+    {
+      int largest = 0;
+      for (int i = 0; i < arr.Length; i++)
+      {
+        if (arr[i] > largest)
+        {
+          largest = arr[i];
+        } else
+        {
+          largest = largest;
+        }
+      }
+      return largest;
+    }
   }
 }

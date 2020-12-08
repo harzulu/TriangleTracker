@@ -29,5 +29,13 @@ namespace TriangleTracker.Tests
       Triangle testTriangle = new Triangle();
       Assert.AreEqual(0, testTriangle.HowManyDuplicates(sides));
     }
+
+    [TestMethod]
+    public void LargestNum_ReturnTheLargestNumber_8()
+    {
+      int[] sides = {3, 4, 8};
+      Triangle testTriangle = new Triangle();
+      Assert.AreEqual(12, testTriangle.LargestNum(sides));
+    }
   }
 }
