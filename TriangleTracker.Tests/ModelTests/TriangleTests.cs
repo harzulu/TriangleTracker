@@ -19,7 +19,7 @@ namespace TriangleTracker.Tests
     {
       int[] sides = {3, 4, 8};
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(true, testTriangle.AnyDuplicates(sides));
+      Assert.AreEqual(false, testTriangle.AnyDuplicates(sides));
     }
   }
 }
