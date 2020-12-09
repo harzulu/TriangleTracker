@@ -52,33 +52,33 @@ This application will take in 3 side lengths and tell the user which type of tri
 
 | Spec                                            | Input                        | Output                        |
 | :---------------------------------------------- | :--------------------------- | :---------------------------- |
-| **Returns the three user input numbers** | 3, 2, 8 | `3, 2, 8` |
-| **Returns if there are at least 2 of the same number** | 2, 2, 8 | `true` |
-| **Returns if there are 3, 2, or none of the same number** | 3, 3, 8 | `2` |
-| **Returns the largest number** | 3, 2, 8 | `8` |
-| **Returns if the two smallest numbers' sum is less than the largest number** | 3, 2, 8 | `true` |
+| **Returns the three user input numbers** | 3, 7, 8 | `3, 7, 8` |
+| **Returns if there are at least 2 of the same number** | 2, 7, 8 | `true` |
+| **Returns if there are 3, 2, or none of the same number** | 7, 7, 8 | `2` |
+| **Returns the largest number** | 3, 7, 8 | `8` |
+| **Returns if the two smallest numbers' sum is more than the largest number** | 3, 7, 8 | `true` |
 
 ### Tests
 
 Describe: allNum(nums)
 Test: Return all the user inputted numbers
-Expect: allNum(3, 4, 8).toEqual(3, 4, 8)
+Expect: allNum(3, 7, 8).toEqual(3, 7, 8)
 
 Describe: duplicates(nums)
 Test: Return if there are any duplicates of any number
-Expect: duplicates(3, 3, 8).toEqual(true)
+Expect: duplicates(7, 7, 8).toEqual(true)
 
 Describe: numOfDuplicates(nums)
 Test: Return if there are 3, 2, or no duplicates of a number
-Expect: numOfDuplicates(3, 3, 8).toEqual(2)
+Expect: numOfDuplicates(7, 7, 8).toEqual(2)
 
 Describe: largestNum(nums)
 Test: Returns the largest number
-Expect: largestNum(3, 4, 8).toEqual(8)
+Expect: largestNum(3, 7, 8).toEqual(8)
 
 Describe: smallerSum(nums)
-Test: Returns if the two smallest numbers add up to less than the largest num
-Expect: smallerSum(3, 4, 8).toEqual(true)
+Test: Returns if the two smallest numbers add up to more than the largest num
+Expect: smallerSum(3, 7, 8).toEqual(true)
 
 ## Bugs / Issues
 
@@ -86,4 +86,4 @@ No known bugs or issues
 
 ### License & Copyright
 
-_MIT_ Copyright (c) 2020 *_Ben McFarland_**
+_MIT_ Copyright (c) 2020 *_Ben McFarland_*

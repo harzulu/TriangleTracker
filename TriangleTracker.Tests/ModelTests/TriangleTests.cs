@@ -9,7 +9,7 @@ namespace TriangleTracker.Tests
     [TestMethod]
     public void ReturnNums_ReturnTheFirstGivenNumber_Num1()
     {
-      int[] sides = {3, 4, 8};
+      int[] sides = {3, 7, 8};
       Triangle testTriangle = new Triangle();
       Assert.AreEqual(3, testTriangle.ReturnNums(sides));
     }
@@ -17,7 +17,7 @@ namespace TriangleTracker.Tests
     [TestMethod]
     public void AnyDuplicates_ReturnIfThereAreDuplicates_True()
     {
-      int[] sides = {3, 4, 8};
+      int[] sides = {3, 7, 8};
       Triangle testTriangle = new Triangle();
       Assert.AreEqual(false, testTriangle.AnyDuplicates(sides));
     }
@@ -25,7 +25,7 @@ namespace TriangleTracker.Tests
     [TestMethod]
     public void HowManyDuplicates_ReturnHowManyDuplicates_0()
     {
-      int[] sides = {3, 4, 8};
+      int[] sides = {3, 7, 8};
       Triangle testTriangle = new Triangle();
       Assert.AreEqual(0, testTriangle.HowManyDuplicates(sides));
     }
@@ -33,7 +33,7 @@ namespace TriangleTracker.Tests
     [TestMethod]
     public void LargestNum_ReturnTheLargestNumber_8()
     {
-      int[] sides = {3, 4, 8};
+      int[] sides = {3, 7, 8};
       Triangle testTriangle = new Triangle();
       Assert.AreEqual(8, testTriangle.LargestNum(sides));
     }
@@ -41,9 +41,9 @@ namespace TriangleTracker.Tests
     [TestMethod]
     public void SumOfSmallest_ReturnTheSumOfTheSmallestNumbers_7()
     {
-      int[] sides = {3, 4, 8};
+      int[] sides = {3, 7, 8};
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(7, testTriangle.SumOfSmallest(sides));
+      Assert.AreEqual(10, testTriangle.SumOfSmallest(sides));
     }
   }
 }

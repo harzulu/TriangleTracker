@@ -1,5 +1,53 @@
+using System;
+using System.Collections.Generic;
+using TriangleTracker;
+
 namespace TriangleTracker
 {
+
+  public class Program
+  {
+    public static void Main()
+    {
+      Console.WriteLine("Enter the first side of the triangle: ");
+      int sideOne = int.Parse(Console.ReadLine());
+
+      Console.WriteLine("Enter the second side of the triangle: ");
+      int sideTwo = int.Parse(Console.ReadLine());
+
+      Console.WriteLine("Enter the third side of the triangle: ");
+      int sideThree = int.Parse(Console.ReadLine());
+
+      int[] nums = {sideOne, sideTwo, sideThree};
+
+      Triangle givenTriangle = new Triangle();
+
+      if (givenTriangle.SumOfSmallest(nums) > givenTriangle.LargestNum(nums))
+      {
+        if(givenTriangle.HowManyDuplicates(nums) == 3)
+        {
+          Console.WriteLine("Your triangle is an Equilateral!");
+        } else if (givenTriangle.HowManyDuplicates(nums) == 2)
+        {
+          Console.WriteLine("Your triangle is an Iosceles!");
+        } else if (givenTriangle.HowManyDuplicates(nums) == 0)
+        {
+          Console.WriteLine("Your triangle is a Scalene!");
+        } else
+        {
+          Console.WriteLine(givenTriangle.HowManyDuplicates(nums));
+        }
+      } else
+      {
+        Console.WriteLine("You entered an invalid triangle....");
+        Console.WriteLine(givenTriangle.HowManyDuplicates(nums));
+        Console.WriteLine(givenTriangle.SumOfSmallest(nums));
+        Console.WriteLine(givenTriangle.LargestNum(nums));
+      }
+
+
+    }
+  }
   public class Triangle
   {
     public int ReturnNums(int[] arr)
@@ -57,7 +105,7 @@ namespace TriangleTracker
           largest = arr[i];
         } else
         {
-          largest = largest;
+          largest += 0;
         }
       }
       return largest;
